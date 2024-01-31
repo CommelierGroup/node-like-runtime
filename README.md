@@ -56,6 +56,6 @@ node-like 런타임의 핵심 함수로써 node.js 의 이벤트 루프와 유�
 
 #### 비동기 함수
 
-##### wait(evtId: Symbol, callback(...any): void)
+##### wait(evtId: Symbol, callback(...any): void): void
 
 JavaScript 의 `await` 호출을 시뮬레이션 합니다. `event` 에서 반환된 Symbol 을 첫번째 인자로 넣습니다.
