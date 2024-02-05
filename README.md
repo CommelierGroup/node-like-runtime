@@ -64,6 +64,14 @@ JavaScript 의 `await` 호출을 시뮬레이션 합니다. `event` 에서 반�
 
 구현은 `VanillaJS` + `Node.js Built-ins` 만 사용합니다.
 
+Code Documentation 은 `JSDoc` 을 사용합니다.
+
 TDD 를 기반으로 높은 커버리지를 달성하는 것을 목표로 합니다.
 
-효율적인 테스팅을 위해, [vitest](https://vitest.dev/) 라이브러리를 사용하고, jest 컨벤션을 따릅니다.
+효율적인 테스팅을 위해, [vitest](https://vitest.dev/) 라이브러리를 사용하고, `jest` 컨벤션을 따릅니다.
+
+## 개선 사항
+
+결과 뿐만 아니라 실제 내부 로직도 Node.js 방식을 지향합니다.
+
+100% 동일하게 구현하진 못하겠지만, 실제 [node](https://github.com/nodejs/node) 코드를 보고 점차 개선시켜 나가봅시다.
