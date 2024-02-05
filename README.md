@@ -59,3 +59,11 @@ node-like 런타임의 핵심 함수로써 node.js 의 이벤트 루프와 유�
 ##### wait(evtId: Symbol, callback(...any): void): void
 
 JavaScript 의 `await` 호출을 시뮬레이션 합니다. `event` 에서 반환된 Symbol 을 첫번째 인자로 넣습니다.
+
+## 구현
+
+구현은 `VanillaJS` + `Node.js Built-ins` 만 사용합니다.
+
+TDD 를 기반으로 높은 커버리지를 달성하는 것을 목표로 합니다.
+
+효율적인 테스팅을 위해, [vitest](https://vitest.dev/) 라이브러리를 사용하고, jest 컨벤션을 따릅니다.
